@@ -1,0 +1,107 @@
+{
+  "cars": [
+    {
+      "id": 1,
+      "name": "Alfa Romeo SZ 1989",
+      "img": "/cars/alfa-romeo-sz-1989.webp"
+    },
+    {
+      "id": 2,
+      "name": "Audi Quattro",
+      "img": "/cars/audi-quattro.webp"
+    },
+    {
+      "id": 3,
+      "name": "BMW M3 E36",
+      "img": "/cars/bmw-m3-e36-ok.webp"
+    },
+    {
+      "id": 4,
+      "name": "Citroën 2CV 1975",
+      "img": "/cars/citroen-2cv-1975-2.webp"
+    },
+    {
+      "id": 5,
+      "name": "Ferrari Testarossa",
+      "img": "/cars/ferrari-testarossa.webp"
+    },
+    {
+      "id": 6,
+      "name": "Fiat Uno",
+      "img": "/cars/fiat-uno.webp"
+    },
+    {
+      "id": 7,
+      "name": "Ford Fiesta",
+      "img": "/cars/ford-fiesta.webp"
+    },
+    {
+      "id": 8,
+      "name": "Honda NSX",
+      "img": "/cars/honda-nsx.webp"
+    },
+    {
+      "id": 9,
+      "name": "Hyundai Coupé",
+      "img": "/cars/hyundai-coupe.webp"
+    },
+    {
+      "id": 10,
+      "name": "Mazda MX-5",
+      "img": "/cars/mazda-mx-5-all.webp"
+    },
+    {
+      "id": 11,
+      "name": "Mercedes 300 SL",
+      "img": "/cars/mercedes-300-sl.webp"
+    },
+    {
+      "id": 12,
+      "name": "MINIs",
+      "img": "/cars/minis.webp"
+    },
+    {
+      "id": 13,
+      "name": "Nissan Patrol",
+      "img": "/cars/nissan-patrol.webp"
+    },
+    {
+      "id": 14,
+      "name": "Opel Manta 81–84",
+      "img": "/cars/opel-manta-81-84.webp"
+    },
+    {
+      "id": 15,
+      "name": "Peugeot 205 GTI 1993",
+      "img": "/cars/peugeot-205-gti-1993.webp"
+    },
+    {
+      "id": 16,
+      "name": "Renault Fuego",
+      "img": "/cars/renault-fuego.webp"
+    },
+    {
+      "id": 17,
+      "name": "Seat 600",
+      "img": "/cars/seat-600-2.webp"
+    },
+    {
+      "id": 18,
+      "name": "Smart ForTwo",
+      "img": "/cars/smart-fortwo.webp"
+    },
+    {
+      "id": 19,
+      "name": "Toyota Celica CS",
+      "img": "/cars/toyota-celica-cs.webp"
+    },
+    {
+      "id": 20,
+      "name": "Volkswagen Escarabajo",
+      "img": "/cars/volkswagen-escarabajo.webp"
+    }
+  ],
+  "users":[
+    
+  ]
+}

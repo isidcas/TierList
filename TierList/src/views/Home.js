@@ -25,7 +25,7 @@ export function Home() {
       justify-content: center;
       align-items: center;
     ">
-        <a href="#/TierList" class="btn btn-primary btn-lg">Empezar</a>
+        <a href="#/tierlist" class="btn btn-primary btn-lg">Empezar</a>
     </div>
 
   </section>

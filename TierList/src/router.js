@@ -8,9 +8,9 @@ const view = document.getElementById('view');
 const route = location.hash.slice(1).toLowerCase() || '/';
 const routes = {
 '/': Home,
-'/List': List,
-'/TierList': TierList,
-'/Login': Login,
+'/list': List,
+'/tierlist': TierList,
+'/login': Login,
 };
 const screen = routes[route] || NotFound;
 view.innerHTML = screen();
