@@ -46,7 +46,7 @@ export function TierList() {
 
       select.addEventListener('change', e => {
         const tier = e.target.value;
-        if (!tier) return;
+        if (!tier ) return;
 
         let startIndex = 0;
         switch(tier) {
@@ -60,17 +60,15 @@ export function TierList() {
         for (let i = startIndex; i < startIndex + 20; i++) {
           if (tds[i].children.length === 0) {
             tds[i].appendChild(img);
-            select.remove(); // quitar select después de colocar la imagen
+            tds[i].appendChild(select);
+             // quitar select después de colocar la imagen
             break;
           }
         }
       });
 
       const wrapper = document.createElement('div');
-      wrapper.style.display = 'flex';
-      wrapper.style.flexDirection = 'column';
-      wrapper.style.alignItems = 'center';
-      wrapper.style.margin = '5px';
+     wrapper.className="wrapper";
       wrapper.appendChild(img);
       wrapper.appendChild(select);
 
@@ -85,7 +83,7 @@ export function TierList() {
       });
     }
 
-    fetch('http://localhost:3001/cars')
+    fetch('http://localhost:3000/cars')
       .then(res => res.json())
       .then(cars => {
         carsList = cars; // ✅ ahora carsList es let
