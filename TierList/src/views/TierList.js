@@ -20,23 +20,26 @@ export function TierList() {
       </tbody>
     </table>
 
-    <div id="cars-images"></div>
+    <div id="cars-images">
+    </div>
+    <div id="buttonTier">
     <button id="reset" class="btn btn-primary btn-lg">Reiniciar</button>
     <a href="#/list" class="btn btn-primary btn-lg">Ver Listas</a>
+</div>
+
   `;
 
   setTimeout(() => {
     const container = document.getElementById('cars-images');
     const tds = document.querySelectorAll('#tier-table td');
-    let carsList = JSON.parse(localStorage.getItem("cars") || "[]"); // ✅ parsear JSON
+    let carsList = JSON.parse(localStorage.getItem("cars") || "[]"); 
 
     const createCarElement = (car) => {
       const img = document.createElement('img');
       img.src = car.img;
-
       const select = document.createElement("select");
       select.innerHTML = `
-        <option value="">Selecciona</option>
+        <option value="">${car.name}</option>
         <option value="S">S</option>
         <option value="A">A</option>
         <option value="B">B</option>
@@ -86,7 +89,7 @@ export function TierList() {
     fetch('http://localhost:3000/cars')
       .then(res => res.json())
       .then(cars => {
-        carsList = cars; // ✅ ahora carsList es let
+        carsList = cars;
         localStorage.setItem("cars", JSON.stringify(carsList)); // ✅ guardar en LocalStorage
         renderCars(carsList);
       })

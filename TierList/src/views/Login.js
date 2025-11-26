@@ -1,8 +1,22 @@
 export function Login() {
 return `
-<section>
-<h1>Bienvenido a la Home</h1>
-<p>Esta es la página de inicio.</p>
-</section>
+<div class="login">
+    <form id="signup" class="form">
+      <h1>Registrarse</h1>
+      <div class="form-field">
+        <label for="username">Nombre de usuario:</label>
+        <input type="text" name="username" id="username" autocomplete="off">
+        <small></small>
+      </div>
+      <div class="form-field">
+        <label for="phone">Contraseña:</label>
+        <input type="password" name="password" id="password" autocomplete="off">
+        <small></small>
+      </div>
+      <div class="form-field">
+        <input type="submit" value="Registrarse">
+      </div>
+    </form>
+  </div>
 `;
 }
