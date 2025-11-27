@@ -1,6 +1,7 @@
 export function TierList() {
   const view = `
     <table id="tier-table">
+    <caption>  TIERLIST</h1></caption>
       <tbody>
         <tr>
           <th style="background:red">S</th>${'<td></td>'.repeat(20)}
@@ -24,7 +25,9 @@ export function TierList() {
     </div>
     <div id="buttonTier">
     <button id="reset" class="btn btn-primary btn-lg">Reiniciar</button>
+    <button id="save" class="btn btn-primary btn-lg">Guardar</button>
     <a href="#/list" class="btn btn-primary btn-lg">Ver Listas</a>
+
 </div>
 
   `;
@@ -78,6 +81,48 @@ export function TierList() {
       return wrapper;
     }
 
+      document.getElementById('save').addEventListener('click', () => {
+    const tds = document.querySelectorAll('#tier-table td');
+    const result = [];
+
+    tds.forEach(td => {
+      const img = td.querySelector('img');
+      const select = td.querySelector('select');
+
+      if (img && select && select.value !== "") {
+        result.push({
+          name: select.options[0].textContent,
+          img: img.src,
+          tier: select.value
+        });
+      }
+    });
+
+    if (result.length !== carsList.length) {
+      alert("⚠ Aún quedan coches sin colocar.");
+      return;
+    }
+
+    localStorage.setItem("tierListSaved", JSON.stringify(result));
+
+    fetch("http://localhost:3000/list", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(result)
+    })
+    .then(res => res.json())
+    .then(data => {
+      console.log("Servidor respondió:", data);
+      alert("Lista enviada al servidor correctamente");
+    })
+    .catch(err => {
+      console.error("Error al enviar lista:", err);
+      alert("Error al enviar la lista al servidor");
+    });
+  });
+
+
+
     const renderCars = (cars) => {
       container.innerHTML = '';
       cars.forEach(car => {
@@ -96,9 +141,9 @@ export function TierList() {
       .catch(err => console.error('Error al cargar coches:', err));
 
     document.getElementById('reset').addEventListener('click', () => {
-      tds.forEach(td => td.innerHTML = ''); // limpiar tabla
-      localStorage.removeItem('cars'); // limpiar almacenamiento
-      renderCars(carsList); // volver a renderizar imágenes con selects
+      tds.forEach(td => td.innerHTML = ''); 
+      localStorage.removeItem('cars');
+      renderCars(carsList); 
     });
 
   }, 0);

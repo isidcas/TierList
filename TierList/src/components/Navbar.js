@@ -1,7 +1,6 @@
 export function Navbar() {
   return `
 
-  <div class="navbar"
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <a class="navbar-brand" href="#/">
@@ -26,9 +25,6 @@ export function Navbar() {
           </li>
         </ul>
       </div>
-    </div>
   </nav>
-
-  
   `;
 }
