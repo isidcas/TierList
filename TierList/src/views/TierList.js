@@ -105,7 +105,7 @@ export function TierList() {
 
     localStorage.setItem("tierListSaved", JSON.stringify(result));
 
-    fetch("http://localhost:3000/list", {
+    fetch("https://692aa5977615a15ff24d3a0d.mockapi.io/api/list"  /*No tengo el json de las listas*/ , {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(result)
@@ -131,11 +131,11 @@ export function TierList() {
       });
     }
 
-    fetch('http://localhost:3000/cars')
+    fetch('https://692aa5977615a15ff24d3a0d.mockapi.io/api/cars')
       .then(res => res.json())
       .then(cars => {
         carsList = cars;
-        localStorage.setItem("cars", JSON.stringify(carsList)); // ✅ guardar en LocalStorage
+        localStorage.setItem("cars", JSON.stringify(carsList));
         renderCars(carsList);
       })
       .catch(err => console.error('Error al cargar coches:', err));
