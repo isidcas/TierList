@@ -307,6 +307,109 @@
         "tier": "C"
       },
       "id": "59de"
+    },
+    {
+      "0": {
+        "name": "BMW M3 E36",
+        "img": "http://localhost:5173/cars/bmw-m3-e36-ok.webp",
+        "tier": "S"
+      },
+      "1": {
+        "name": "Ferrari Testarossa",
+        "img": "http://localhost:5173/cars/ferrari-testarossa.webp",
+        "tier": "S"
+      },
+      "2": {
+        "name": "Honda NSX",
+        "img": "http://localhost:5173/cars/honda-nsx.webp",
+        "tier": "S"
+      },
+      "3": {
+        "name": "Mazda MX-5",
+        "img": "http://localhost:5173/cars/mazda-mx-5-all.webp",
+        "tier": "S"
+      },
+      "4": {
+        "name": "Audi Quattro",
+        "img": "http://localhost:5173/cars/audi-quattro.webp",
+        "tier": "A"
+      },
+      "5": {
+        "name": "Hyundai Coupé",
+        "img": "http://localhost:5173/cars/hyundai-coupe.webp",
+        "tier": "A"
+      },
+      "6": {
+        "name": "Toyota Celica CS",
+        "img": "http://localhost:5173/cars/toyota-celica-cs.webp",
+        "tier": "A"
+      },
+      "7": {
+        "name": "Alfa Romeo SZ 1989",
+        "img": "http://localhost:5173/cars/alfa-romeo-sz-1989.webp",
+        "tier": "B"
+      },
+      "8": {
+        "name": "Fiat Uno",
+        "img": "http://localhost:5173/cars/fiat-uno.webp",
+        "tier": "B"
+      },
+      "9": {
+        "name": "Ford Fiesta",
+        "img": "http://localhost:5173/cars/ford-fiesta.webp",
+        "tier": "B"
+      },
+      "10": {
+        "name": "Mercedes 300 SL",
+        "img": "http://localhost:5173/cars/mercedes-300-sl.webp",
+        "tier": "B"
+      },
+      "11": {
+        "name": "Peugeot 205 GTI 1993",
+        "img": "http://localhost:5173/cars/peugeot-205-gti-1993.webp",
+        "tier": "B"
+      },
+      "12": {
+        "name": "Nissan Patrol",
+        "img": "http://localhost:5173/cars/nissan-patrol.webp",
+        "tier": "C"
+      },
+      "13": {
+        "name": "Volkswagen Escarabajo",
+        "img": "http://localhost:5173/cars/volkswagen-escarabajo.webp",
+        "tier": "C"
+      },
+      "14": {
+        "name": "Opel Manta 81–84",
+        "img": "http://localhost:5173/cars/opel-manta-81-84.webp",
+        "tier": "C"
+      },
+      "15": {
+        "name": "Renault Fuego",
+        "img": "http://localhost:5173/cars/renault-fuego.webp",
+        "tier": "C"
+      },
+      "16": {
+        "name": "Seat 600",
+        "img": "http://localhost:5173/cars/seat-600-2.webp",
+        "tier": "C"
+      },
+      "17": {
+        "name": "MINIs",
+        "img": "http://localhost:5173/cars/minis.webp",
+        "tier": "D"
+      },
+      "18": {
+        "name": "Citroën 2CV 1975",
+        "img": "http://localhost:5173/cars/citroen-2cv-1975-2.webp",
+        "tier": "D"
+      },
+      "19": {
+        "name": "Smart ForTwo",
+        "img": "http://localhost:5173/cars/smart-fortwo.webp",
+        "tier": "D"
+      },
+      "id": "adc0"
     }
   ]
 }
