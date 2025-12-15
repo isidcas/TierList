@@ -1,0 +1,47 @@
+{
+  "app.title": "Willkommen bei TierList",
+  "app.create": "Tier List erstellen",
+
+  "nav.home": "Start",
+  "nav.tierlist": "Tier List",
+  "nav.lists": "Listen",
+  "nav.login": "Login",
+
+  "footer.company": "Ihr Unternehmen",
+  "footer.rights": "Alle Rechte vorbehalten.",
+
+  "login.title": "Anmelden",
+  "login.username": "Benutzername:",
+  "login.username_placeholder": "Geben Sie Ihren Benutzernamen ein (3-40 Zeichen)",
+  "login.password": "Passwort:",
+  "login.password_placeholder": "Geben Sie Ihr Passwort ein",
+  "login.button": "Einloggen",
+  "login.error_required": "Dieses Feld darf nicht leer sein.",
+  "login.error_username_length": "Benutzername muss zwischen 3 und 40 Zeichen haben.",
+  "login.error_password_required": "Passwort darf nicht leer sein.",
+  "login.error_password_invalid": "Passwort erfüllt nicht die Anforderungen.",
+
+  "saved_lists": "Gespeicherte Listen",
+  "no_lists": "Noch keine Listen gespeichert.",
+  "error_loading": "Fehler beim Laden der Listen.",
+  "view_tierlist": "TierList ansehen",
+
+  "tierlist.title": "TIERLIST",
+  "tierlist.S": "S",
+  "tierlist.A": "A",
+  "tierlist.B": "B",
+  "tierlist.C": "C",
+  "tierlist.D": "D",
+  "tierlist.reset": "Zurücksetzen",
+  "tierlist.save": "Speichern",
+  "tierlist.view_lists": "Listen ansehen",
+  "tierlist.not_placed": "⚠ Es sind noch Autos nicht platziert.",
+  "tierlist.saved_success": "Liste erfolgreich an den Server gesendet",
+  "tierlist.saved_error": "Fehler beim Senden der Liste an den Server",
+
+  "viewtierlist.title": "Tier List ansehen",
+  "viewtierlist.back": "Zurück",
+
+  "notfound.title": "404",
+  "notfound.text": "Seite nicht gefunden."
+}

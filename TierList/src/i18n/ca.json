@@ -1,0 +1,47 @@
+{
+  "app.title": "Benvingut a TierList",
+  "app.create": "Crear Tier List",
+
+  "nav.home": "Inici",
+  "nav.tierlist": "Tier List",
+  "nav.lists": "Llistes",
+  "nav.login": "Login",
+
+  "footer.company": "La Teva Empresa",
+  "footer.rights": "Tots els drets reservats.",
+
+  "login.title": "Iniciar Sessió",
+  "login.username": "Nom d'usuari:",
+  "login.username_placeholder": "Escriu el teu nom (3-40 caràcters)",
+  "login.password": "Contrasenya:",
+  "login.password_placeholder": "Escriu la teva contrasenya",
+  "login.button": "Entrar",
+  "login.error_required": "Aquest camp no pot estar buit.",
+  "login.error_username_length": "El nom ha de tenir entre 3 i 40 caràcters.",
+  "login.error_password_required": "La contrasenya no pot estar en blanc.",
+  "login.error_password_invalid": "La contrasenya no compleix els requisits.",
+
+  "saved_lists": "Llistes Guardades",
+  "no_lists": "Encara no hi ha llistes guardades.",
+  "error_loading": "Error en carregar les llistes.",
+  "view_tierlist": "Veure TierList",
+
+  "tierlist.title": "TIERLIST",
+  "tierlist.S": "S",
+  "tierlist.A": "A",
+  "tierlist.B": "B",
+  "tierlist.C": "C",
+  "tierlist.D": "D",
+  "tierlist.reset": "Reiniciar",
+  "tierlist.save": "Guardar",
+  "tierlist.view_lists": "Veure Llistes",
+  "tierlist.not_placed": "⚠ Encara queden cotxes sense col·locar.",
+  "tierlist.saved_success": "Llista enviada correctament al servidor",
+  "tierlist.saved_error": "Error en enviar la llista al servidor",
+
+  "viewtierlist.title": "Veure Tier List",
+  "viewtierlist.back": "Tornar",
+
+  "notfound.title": "404",
+  "notfound.text": "Pàgina no trobada."
+}

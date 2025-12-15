@@ -1,35 +1,35 @@
+import { t } from '../i18n';
+
 export function TierList() {
   const view = `
     <table id="tier-table">
-    <caption>  TIERLIST</h1></caption>
+      <caption>${t('tierlist.title')}</caption>
       <tbody>
         <tr>
-          <th style="background:red">S</th>${'<td></td>'.repeat(20)}
+          <th style="background:red">${t('tierlist.S')}</th>${'<td></td>'.repeat(20)}
         </tr>
         <tr>
-          <th style="background:yellow">A</th>${'<td></td>'.repeat(20)}
+          <th style="background:yellow">${t('tierlist.A')}</th>${'<td></td>'.repeat(20)}
         </tr>
         <tr>
-          <th style="background:green">B</th>${'<td></td>'.repeat(20)}
+          <th style="background:green">${t('tierlist.B')}</th>${'<td></td>'.repeat(20)}
         </tr>
         <tr>
-          <th style="background:turquoise">C</th>${'<td></td>'.repeat(20)}
+          <th style="background:turquoise">${t('tierlist.C')}</th>${'<td></td>'.repeat(20)}
         </tr>
         <tr>
-          <th style="background:purple">D</th>${'<td></td>'.repeat(20)}
+          <th style="background:purple">${t('tierlist.D')}</th>${'<td></td>'.repeat(20)}
         </tr>
       </tbody>
     </table>
 
-    <div id="cars-images">
-    </div>
+    <div id="cars-images"></div>
+
     <div id="buttonTier">
-    <button id="reset" class="btn btn-primary btn-lg">Reiniciar</button>
-    <button id="save" class="btn btn-primary btn-lg">Guardar</button>
-    <a href="#/list" class="btn btn-primary btn-lg">Ver Listas</a>
-
-</div>
-
+      <button id="reset" class="btn btn-primary btn-lg">${t('tierlist.reset')}</button>
+      <button id="save" class="btn btn-primary btn-lg">${t('tierlist.save')}</button>
+      <a href="#/list" class="btn btn-primary btn-lg">${t('tierlist.view_lists')}</a>
+    </div>
   `;
 
   setTimeout(() => {
@@ -52,7 +52,7 @@ export function TierList() {
 
       select.addEventListener('change', e => {
         const tier = e.target.value;
-        if (!tier ) return;
+        if (!tier) return;
 
         let startIndex = 0;
         switch(tier) {
@@ -67,61 +67,58 @@ export function TierList() {
           if (tds[i].children.length === 0) {
             tds[i].appendChild(img);
             tds[i].appendChild(select);
-             // quitar select después de colocar la imagen
             break;
           }
         }
       });
 
       const wrapper = document.createElement('div');
-     wrapper.className="wrapper";
+      wrapper.className = "wrapper";
       wrapper.appendChild(img);
       wrapper.appendChild(select);
 
       return wrapper;
     }
 
-      document.getElementById('save').addEventListener('click', () => {
-    const tds = document.querySelectorAll('#tier-table td');
-    const result = [];
+    document.getElementById('save').addEventListener('click', () => {
+      const tds = document.querySelectorAll('#tier-table td');
+      const result = [];
 
-    tds.forEach(td => {
-      const img = td.querySelector('img');
-      const select = td.querySelector('select');
+      tds.forEach(td => {
+        const img = td.querySelector('img');
+        const select = td.querySelector('select');
 
-      if (img && select && select.value !== "") {
-        result.push({
-          name: select.options[0].textContent,
-          img: img.src,
-          tier: select.value
-        });
+        if (img && select && select.value !== "") {
+          result.push({
+            name: select.options[0].textContent,
+            img: img.src,
+            tier: select.value
+          });
+        }
+      });
+
+      if (result.length !== carsList.length) {
+        alert(t('tierlist.not_placed'));
+        return;
       }
+
+      localStorage.setItem("tierListSaved", JSON.stringify(result));
+
+      fetch("https://692aa5977615a15ff24d3a0d.mockapi.io/api/list", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(result)
+      })
+      .then(res => res.json())
+      .then(data => {
+        console.log("Servidor respondió:", data);
+        alert(t('tierlist.saved_success'));
+      })
+      .catch(err => {
+        console.error("Error al enviar lista:", err);
+        alert(t('tierlist.saved_error'));
+      });
     });
-
-    if (result.length !== carsList.length) {
-      alert("⚠ Aún quedan coches sin colocar.");
-      return;
-    }
-
-    localStorage.setItem("tierListSaved", JSON.stringify(result));
-
-    fetch("https://692aa5977615a15ff24d3a0d.mockapi.io/api/list"  /*No tengo el json de las listas*/ , {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(result)
-    })
-    .then(res => res.json())
-    .then(data => {
-      console.log("Servidor respondió:", data);
-      alert("Lista enviada al servidor correctamente");
-    })
-    .catch(err => {
-      console.error("Error al enviar lista:", err);
-      alert("Error al enviar la lista al servidor");
-    });
-  });
-
-
 
     const renderCars = (cars) => {
       container.innerHTML = '';

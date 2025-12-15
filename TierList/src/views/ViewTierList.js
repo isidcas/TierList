@@ -1,29 +1,29 @@
+import { t } from '../i18n';
+
 export function ViewTierList(listId) {
   const view = `
     <section>
-      <h1>Ver Tier List</h1>
+      <h1>${t('viewtierlist.title')}</h1>
       <table id="view-tier-table">
         <tbody>
-          <tr><th style="background:red">S</th>${'<td></td>'.repeat(20)}</tr>
-          <tr><th style="background:yellow">A</th>${'<td></td>'.repeat(20)}</tr>
-          <tr><th style="background:green">B</th>${'<td></td>'.repeat(20)}</tr>
-          <tr><th style="background:turquoise">C</th>${'<td></td>'.repeat(20)}</tr>
-          <tr><th style="background:purple">D</th>${'<td></td>'.repeat(20)}</tr>
+          <tr><th style="background:red">${t('tierlist.S')}</th>${'<td></td>'.repeat(20)}</tr>
+          <tr><th style="background:yellow">${t('tierlist.A')}</th>${'<td></td>'.repeat(20)}</tr>
+          <tr><th style="background:green">${t('tierlist.B')}</th>${'<td></td>'.repeat(20)}</tr>
+          <tr><th style="background:turquoise">${t('tierlist.C')}</th>${'<td></td>'.repeat(20)}</tr>
+          <tr><th style="background:purple">${t('tierlist.D')}</th>${'<td></td>'.repeat(20)}</tr>
         </tbody>
       </table>
-      <a href="#/list" class="btn btn-primary">Volver</a>
+      <a href="#/list" class="btn btn-primary">${t('viewtierlist.back')}</a>
     </section>
   `;
 
   setTimeout(() => {
     const tds = document.querySelectorAll('#view-tier-table td');
 
-    
     fetch(`http://localhost:3000/list/${listId}`)
       .then(res => res.json())
       .then(listObj => {
-        //convertimos lo objetos de lista en un array oara poder trabajar con ellos
-        const items = Object.values(listObj)
+        const items = Object.values(listObj);
 
         items.forEach(item => {
           let startIndex = 0;

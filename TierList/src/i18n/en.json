@@ -1,0 +1,47 @@
+{
+  "app.title": "Welcome to TierList",
+  "app.create": "Create Tier List",
+
+  "nav.home": "Home",
+  "nav.tierlist": "Tier List",
+  "nav.lists": "Lists",
+  "nav.login": "Login",
+
+  "footer.company": "Your Company",
+  "footer.rights": "All rights reserved.",
+
+  "login.title": "Login",
+  "login.username": "Username:",
+  "login.username_placeholder": "Enter your username (3-40 chars)",
+  "login.password": "Password:",
+  "login.password_placeholder": "Enter your password",
+  "login.button": "Login",
+  "login.error_required": "This field cannot be empty.",
+  "login.error_username_length": "Username must be between 3 and 40 characters.",
+  "login.error_password_required": "Password cannot be empty.",
+  "login.error_password_invalid": "Password does not meet the requirements.",
+
+  "saved_lists": "Saved Lists",
+  "no_lists": "No saved lists yet.",
+  "error_loading": "Error loading lists.",
+  "view_tierlist": "View TierList",
+
+  "tierlist.title": "TIERLIST",
+  "tierlist.S": "S",
+  "tierlist.A": "A",
+  "tierlist.B": "B",
+  "tierlist.C": "C",
+  "tierlist.D": "D",
+  "tierlist.reset": "Reset",
+  "tierlist.save": "Save",
+  "tierlist.view_lists": "View Lists",
+  "tierlist.not_placed": "⚠ There are still cars not placed.",
+  "tierlist.saved_success": "List sent to server successfully",
+  "tierlist.saved_error": "Error sending list to server",
+
+  "viewtierlist.title": "View Tier List",
+  "viewtierlist.back": "Back",
+
+  "notfound.title": "404",
+  "notfound.text": "Page not found."
+}

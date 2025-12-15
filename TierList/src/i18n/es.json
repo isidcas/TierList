@@ -1,0 +1,47 @@
+{
+  "app.title": "Bienvenido a TierList",
+  "app.create": "Crear Tier List",
+
+  "nav.home": "Inicio",
+  "nav.tierlist": "Tier List",
+  "nav.lists": "Listas",
+  "nav.login": "Login",
+
+  "footer.company": "Tu Empresa",
+  "footer.rights": "Todos los derechos reservados.",
+
+  "login.title": "Iniciar Sesión",
+  "login.username": "Nombre de usuario:",
+  "login.username_placeholder": "Escribe tu nombre (3-40 caracteres)",
+  "login.password": "Contraseña:",
+  "login.password_placeholder": "Escribe tu contraseña",
+  "login.button": "Entrar",
+  "login.error_required": "Este campo no puede estar vacío.",
+  "login.error_username_length": "El nombre debe tener entre 3 y 40 caracteres.",
+  "login.error_password_required": "La contraseña no puede estar en blanco.",
+  "login.error_password_invalid": "La contraseña no cumple los requisitos.",
+
+  "saved_lists": "Listas Guardadas",
+  "no_lists": "No hay listas guardadas aún.",
+  "error_loading": "Error al cargar las listas.",
+  "view_tierlist": "Ver TierList",
+
+  "tierlist.title": "TIERLIST",
+  "tierlist.S": "S",
+  "tierlist.A": "A",
+  "tierlist.B": "B",
+  "tierlist.C": "C",
+  "tierlist.D": "D",
+  "tierlist.reset": "Reiniciar",
+  "tierlist.save": "Guardar",
+  "tierlist.view_lists": "Ver Listas",
+  "tierlist.not_placed": "⚠ Aún quedan coches sin colocar.",
+  "tierlist.saved_success": "Lista enviada al servidor correctamente",
+  "tierlist.saved_error": "Error al enviar la lista al servidor",
+
+  "viewtierlist.title": "Ver Tier List",
+  "viewtierlist.back": "Volver",
+
+  "notfound.title": "404",
+  "notfound.text": "Página no encontrada."
+}

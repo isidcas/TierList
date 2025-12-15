@@ -1,0 +1,47 @@
+{
+  "app.title": "Bienvenue sur TierList",
+  "app.create": "Créer une Tier List",
+
+  "nav.home": "Accueil",
+  "nav.tierlist": "Tier List",
+  "nav.lists": "Listes",
+  "nav.login": "Connexion",
+
+  "footer.company": "Votre Entreprise",
+  "footer.rights": "Tous droits réservés.",
+
+  "login.title": "Connexion",
+  "login.username": "Nom d'utilisateur:",
+  "login.username_placeholder": "Entrez votre nom (3-40 caractères)",
+  "login.password": "Mot de passe:",
+  "login.password_placeholder": "Entrez votre mot de passe",
+  "login.button": "Se connecter",
+  "login.error_required": "Ce champ ne peut pas être vide.",
+  "login.error_username_length": "Le nom d'utilisateur doit comporter entre 3 et 40 caractères.",
+  "login.error_password_required": "Le mot de passe ne peut pas être vide.",
+  "login.error_password_invalid": "Le mot de passe ne respecte pas les exigences.",
+
+  "saved_lists": "Listes Sauvegardées",
+  "no_lists": "Aucune liste sauvegardée pour le moment.",
+  "error_loading": "Erreur lors du chargement des listes.",
+  "view_tierlist": "Voir TierList",
+
+  "tierlist.title": "TIERLIST",
+  "tierlist.S": "S",
+  "tierlist.A": "A",
+  "tierlist.B": "B",
+  "tierlist.C": "C",
+  "tierlist.D": "D",
+  "tierlist.reset": "Réinitialiser",
+  "tierlist.save": "Enregistrer",
+  "tierlist.view_lists": "Voir les listes",
+  "tierlist.not_placed": "⚠ Il reste des voitures non placées.",
+  "tierlist.saved_success": "Liste envoyée au serveur avec succès",
+  "tierlist.saved_error": "Erreur lors de l'envoi de la liste au serveur",
+
+  "viewtierlist.title": "Voir Tier List",
+  "viewtierlist.back": "Retour",
+
+  "notfound.title": "404",
+  "notfound.text": "Page non trouvée."
+}

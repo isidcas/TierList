@@ -1,22 +1,24 @@
+import { t } from '../i18n';
+
 export function Home() {
   return `
   <section style="position: relative; height: 400px;">
 
-  <!-- Imagen de fondo -->
-  <div style="
-  background-image: url('src/assets/fondo_start.jpeg');
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  opacity: 0.8;
-  "></div>
+    <!-- Imagen de fondo -->
+    <div style="
+      background-image: url('src/assets/fondo_start.jpeg');
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      opacity: 0.8;
+    "></div>
 
-    <!-- Botón centrado -->
+    <!-- Contenido -->
     <div style="
       position: relative;
       z-index: 2;
@@ -24,8 +26,14 @@ export function Home() {
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-direction: column;
+      gap: 1rem;
     ">
-        <a href="#/tierlist" class="btn btn-primary btn-lg">Empezar</a>
+      <h1 id="title">${t('app.title')}</h1>
+
+      <a href="#/tierlist" class="btn btn-primary btn-lg">
+        ${t('app.create')}
+      </a>
     </div>
 
   </section>
